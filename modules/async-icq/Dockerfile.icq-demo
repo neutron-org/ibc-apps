@@ -17,7 +17,7 @@ COPY ./testing/demo-simapp .
 
 RUN make build
 
-FROM alpine:3.18
+FROM alpine:3.21.0
 
 COPY --from=builder /go/build/* /bin/icq-demo
 
